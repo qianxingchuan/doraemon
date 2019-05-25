@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.xingchuan.framework</groupId>
+    <groupId>io.github.xingchuan.framework</groupId>
     <artifactId>doraemon-project-archetype</artifactId>
     <version>2048-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>

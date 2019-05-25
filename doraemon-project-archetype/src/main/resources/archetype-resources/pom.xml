@@ -10,7 +10,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.xingchuan.framework</groupId>
+            <groupId>io.github.xingchuan.framework</groupId>
             <artifactId>doraemon-facade</artifactId>
             <version>2048-SNAPSHOT</version>
         </dependency>

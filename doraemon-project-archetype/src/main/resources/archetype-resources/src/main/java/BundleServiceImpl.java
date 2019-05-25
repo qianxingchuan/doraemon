@@ -2,7 +2,7 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 package ${package};
-import com.xingchuan.framework.doraemon.BundleService;
+import io.github.xingchuan.framework.doraemon.BundleService;
 /**
  * @author xingchuan.qxc
  * @date 2019/5/24 15:59
