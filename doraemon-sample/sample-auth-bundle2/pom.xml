@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>doraemon-sample</artifactId>
-        <groupId>io.github.xingchuan.framework</groupId>
+        <groupId>io.github.qianxingchuan.framework</groupId>
         <version>2048-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,11 +13,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.xingchuan.framework</groupId>
+            <groupId>io.github.qianxingchuan.framework</groupId>
             <artifactId>sample-auth-facade</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.xingchuan.framework</groupId>
+            <groupId>io.github.qianxingchuan.framework</groupId>
             <artifactId>doraemon-facade</artifactId>
             <version>2048-SNAPSHOT</version>
         </dependency>
