@@ -2,17 +2,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+    <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.qianxingchuan.framework</groupId>
     <artifactId>doraemon-facade</artifactId>
     <version>2048-SNAPSHOT</version>
-    <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
+    <name>doraemon-facade</name>
+    <url>https://github.com/qianxingchuan/doraemon</url>
+    <description>A light-weight，java based classloader isolation framework.</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/qianxingchuan/doraemon</url>
+        <connection>https://github.com/qianxingchuan/doraemon.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <name>xingchuan.qian</name>
+            <id>qianxingchuan</id>
+            <email>qianxingchuan@aliyun.com</email>
+            <roles>
+                <role>Admin</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
 
     <build>
         <plugins>
@@ -40,4 +65,15 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 </project>
