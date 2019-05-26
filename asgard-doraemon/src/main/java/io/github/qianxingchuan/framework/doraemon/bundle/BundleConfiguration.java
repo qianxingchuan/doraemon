@@ -10,7 +10,7 @@ import java.util.Set;
  * the bundle configuration
  *
  * @author xingchuan.qxc
- * @date 2019/5/17 16:00
+ * @version  2019/5/17 16:00
  */
 public class BundleConfiguration {
 

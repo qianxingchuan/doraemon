@@ -5,9 +5,33 @@
 
     <groupId>io.github.qianxingchuan.framework</groupId>
     <artifactId>asgard-doraemon</artifactId>
-    <version>2048-SNAPSHOT</version>
+    <version>0.1-RELEASE</version>
     <modelVersion>4.0.0</modelVersion>
-
+    <name>asgard-doraemon</name>
+    <url>https://github.com/qianxingchuan/doraemon</url>
+    <description>A light-weight，java based classloader isolation framework.</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/qianxingchuan/doraemon</url>
+        <connection>https://github.com/qianxingchuan/doraemon.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <name>xingchuan.qian</name>
+            <id>qianxingchuan</id>
+            <email>qianxingchuan@aliyun.com</email>
+            <roles>
+                <role>Admin</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -15,7 +39,7 @@
         <dependency>
             <groupId>io.github.qianxingchuan.framework</groupId>
             <artifactId>doraemon-facade</artifactId>
-            <version>2048-SNAPSHOT</version>
+            <version>0.1-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -70,6 +94,20 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
@@ -90,6 +128,33 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <charset>utf-8</charset>
+                    <encoding>utf-8</encoding>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 </project>

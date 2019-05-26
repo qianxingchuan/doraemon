@@ -4,24 +4,24 @@ package io.github.qianxingchuan.framework.doraemon.constants;
  * Constants defined here.
  *
  * @author xingchuan.qxc
- * @date 2019/5/15 21:00
+ * @version  2019/5/15 21:00
  */
 public interface AsgardMouleConstants {
 
     enum ModuleDirectoryPrefix {
 
         /**
-         * prefix for directory <b>BUNDLE-CLASS<b/>
+         * prefix for directory BUNDLE-CLASS
          */
         MODULE_DIR_PREFIX_BUNDLE_CLASS("BUNDLE-CLASS/"),
 
         /**
-         * prefix for directory <b>lib</b>
+         * prefix for directory lib
          */
         MODULE_DIR_PREFIX_LIB("lib/"),
 
         /**
-         * prefix for directory <b>META-INF</b>
+         * prefix for directory META-INF
          */
         MODULE_DIR_PREFIX_META_INF("META-INF/");
 

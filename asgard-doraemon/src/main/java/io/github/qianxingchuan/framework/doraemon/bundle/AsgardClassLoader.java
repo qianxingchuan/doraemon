@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * The AsgardClassLoader will load all classes in bundle exclude [exported classes].
  *
  * @author xingchuan.qxc
- * @date 2019/5/14 16:58
+ * @version 2019/5/14 16:58
  */
 public class AsgardClassLoader extends URLClassLoader {
 

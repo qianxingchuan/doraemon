@@ -2,7 +2,7 @@ package io.github.qianxingchuan.framework.doraemon.exception;
 
 /**
  * @author xingchuan.qxc
- * @date 2019/5/17 16:57
+ * @version  2019/5/17 16:57
  */
 public class AsgardBundleError {
 

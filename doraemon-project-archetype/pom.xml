@@ -5,7 +5,7 @@
 
     <groupId>io.github.qianxingchuan.framework</groupId>
     <artifactId>doraemon-project-archetype</artifactId>
-    <version>2048-SNAPSHOT</version>
+    <version>0.1-RELEASE</version>
     <packaging>maven-archetype</packaging>
 
     <name>doraemon-project-archetype</name>

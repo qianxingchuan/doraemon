@@ -2,7 +2,7 @@ package io.github.qianxingchuan.framework.doraemon;
 
 /**
  * @author xingchuan.qxc
- * @date 2019-05-23 20:34
+ * @version 2019-05-23 20:34
  */
 public interface BundleService {
 
@@ -13,9 +13,10 @@ public interface BundleService {
 
     /**
      * get instance specified class
-     * @param typeClass
-     * @param <T>
-     * @return
+     *
+     * @param typeClass 类型对应的class
+     * @param <T>       待获取的类型的泛型
+     * @return 此类型的实例
      */
     <T> T getBundleBean(Class<T> typeClass);
 }

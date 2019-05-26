@@ -19,7 +19,7 @@
         <dependency>
             <groupId>io.github.qianxingchuan.framework</groupId>
             <artifactId>asgard-doraemon</artifactId>
-            <version>2048-SNAPSHOT</version>
+            <version>0.1-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

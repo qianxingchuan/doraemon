@@ -6,7 +6,7 @@ import io.github.qianxingchuan.framework.doraemon.bundle.BundleConfiguration;
 
 /**
  * @author xingchuan.qxc
- * @date 2019/5/22 20:55
+ * @version  2019/5/22 20:55
  */
 public class RunDoraemonBundle {
 

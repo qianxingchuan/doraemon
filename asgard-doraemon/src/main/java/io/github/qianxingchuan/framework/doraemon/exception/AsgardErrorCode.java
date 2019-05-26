@@ -11,7 +11,7 @@ import java.util.Set;
  * error code define.
  *
  * @author xingchuan.qxc
- * @date 2019/5/17 16:37
+ * @version  2019/5/17 16:37
  */
 public class AsgardErrorCode implements Serializable {
 

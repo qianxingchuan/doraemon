@@ -34,7 +34,7 @@ import java.util.stream.Collectors;
  * lib/
  *
  * @author xingchuan.qxc
- * @date 2019/5/14 16:54
+ * @version 2019/5/14 16:54
  */
 public class AsgardBundle {
 
@@ -123,7 +123,7 @@ public class AsgardBundle {
      * find the class exported from this bundle
      *
      * @param classFullName the fullname should be found.
-     * @return
+     * @return the class specified.
      */
     public Class<?> getSharedClass(String classFullName) {
         return shareClassMap.get(classFullName);
@@ -132,7 +132,7 @@ public class AsgardBundle {
     /**
      * get bundle name
      *
-     * @return
+     * @return bundle name
      */
     public String getBundleName() {
         return bundleName;
@@ -141,7 +141,7 @@ public class AsgardBundle {
     /**
      * get bundle service
      *
-     * @return
+     * @return bundle service
      */
     public BundleService getBundleService() {
         return bundleService;
