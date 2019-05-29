@@ -1,56 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <groupId>io.github.qianxingchuan.framework</groupId>
+    <artifactId>doraemon-spring-boot-starter</artifactId>
+    <version>0.1-RELEASE</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.qianxingchuan.framework</groupId>
-    <artifactId>doraemon-project-archetype</artifactId>
-    <version>0.1-RELEASE</version>
-    <packaging>maven-archetype</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.qianxingchuan.framework</groupId>
+            <artifactId>asgard-doraemon</artifactId>
+            <version>0.1-RELEASE</version>
+        </dependency>
+    </dependencies>
 
-    <name>doraemon-project-archetype</name>
-    <url>https://github.com/qianxingchuan/doraemon</url>
-    <description>A light-weight，java based classloader isolation framework.</description>
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-    <scm>
-        <url>https://github.com/qianxingchuan/doraemon</url>
-        <connection>https://github.com/qianxingchuan/doraemon.git</connection>
-    </scm>
-    <developers>
-        <developer>
-            <name>xingchuan.qian</name>
-            <id>qianxingchuan</id>
-            <email>qianxingchuan@aliyun.com</email>
-            <roles>
-                <role>Admin</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-    </developers>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.2.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.archetype</groupId>
-                <artifactId>archetype-packaging</artifactId>
-                <version>3.1.0</version>
-            </extension>
-        </extensions>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-archetype-plugin</artifactId>
-                    <version>3.1.0</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -106,15 +88,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-    </distributionManagement>
 </project>

@@ -28,6 +28,7 @@ sample-auth-project : 运行bundle1和bundle2的主程序
 
 1. 可以基于doraemon-project-archetype来构建你的代码骨架
 2. 生成的doraemon-bundle目录结构如图２
+
 ![图２](https://raw.githubusercontent.com/qianxingchuan/doraemon/master/document/bundle-description.png)
 
 bundle 的 pom.xml关键依赖如下：
@@ -56,7 +57,8 @@ bundle 的 pom.xml关键依赖如下：
 </project>
 ```
 
-bundle内部的实现，不限制框架，因为doraemon在运行每个bundle的时候是互相隔离的，但是每个bundle必须要有一个类来实现io.github.qianxingchuan.framework.doraemon.BundleService,并且配置到 bundle.properties
+bundle内部的实现，不限制框架，因为doraemon在运行每个bundle的时候是互相隔离的，
+但是每个bundle必须要有一个类来实现io.github.qianxingchuan.framework.doraemon.BundleService,并且配置到 bundle.properties
 
 bundle.properties配置如下：
 ```
@@ -64,14 +66,25 @@ init-class=io.github.qianxingchuan.doraemon.sample.auth.run.SampleBundleRun
 skip-class=io.github.qianxingchuan.doraemon.sample.facade.AuthFacade
 ```
 init-class　的意思就是bundle在初始化会自动执行这个里面的doIt方法
+
 skip-class 的意思是该class不会由bundle的类加载器来加载
 
-所以按照我们图１的表述，这个配置就是SampleBundleRun由bundle1的模块类加载器来加载，AuthFacade则由Application所在的类加载器来加载。
+所以按照我们图１的表述，这个配置就是io.github.qianxingchuan.doraemon.sample.auth.run.SampleBundleRun由bundle1的模块类加载器来加载，
+io.github.qianxingchuan.doraemon.sample.facade.AuthFacade则由Application所在的类加载器来加载。
 
 所有的代码写完之后，通过mvn clean compile package，即可生成一个 .zip 的bundle文件。
+代码骨架的maven地址如下：
+```
+    <groupId>io.github.qianxingchuan.framework</groupId>
+    <artifactId>doraemon-project-archetype</artifactId>
+    <version>0.1-RELEASE</version>
+```
 
 ## bundle运行
 
 参照sample-auth-project工程
+
+
+
 
 

@@ -11,6 +11,7 @@
         <module>asgard-doraemon</module>
         <module>doraemon-sample</module>
         <module>doraemon-facade</module>
+        <module>doraemon-spring-boot-starter</module>
     </modules>
     <packaging>pom</packaging>
 
