@@ -1,10 +1,11 @@
 package io.github.qianxingchuan.doraemon.sample.auth.dao;
 
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Component;
 
 /**
  * @author xingchuan.qxc
@@ -29,6 +30,6 @@ public class AuthRepository {
     public boolean auth(String user, String pass) {
         System.out.println("bundle2.AuthRepository print " + this.getClass().getClassLoader());
         String password = authMap.get(user);
-        return password.equals(pass);
+        return password != null && password.equals(pass);
     }
 }
